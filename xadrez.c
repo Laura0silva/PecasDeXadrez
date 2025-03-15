@@ -7,7 +7,8 @@ int main(){
   printf("Neste jogo você pode escolher mover apenas 3 peças: Torre, Bispo e Rainha.\n");
   printf("A Torre se move horizontal ou vertical.\n");
   printf("O Bispo: na diagonal.\n");
-  printf("E a Rainha: qualquer direção.\n\n");
+  printf("A Rainha: qualquer direção.\n");
+  printf("O Cavalo: em L.\n\n");
 
   //Pede ao usuário quantas casas deve se deslocar
   printf("A Torre irá se deslocar para direita, digite quantas casas: ");
@@ -36,6 +37,19 @@ int main(){
     printf("Rainha para esquerda.\n");
     i++;
   } while (i <= casas);
+
+  //Indica que o cavalo irá se mover
+  printf("O Cavalo irá se deslocar para baixo e esquerda.\n");
+
+  //Imprime o movimento do cavalo
+  for(int i = 1; i < 2; i++){
+    while (i < 3)
+    {
+      printf("Cavalo para baixo.\n");
+      i++;
+    }
+    printf("Cavalo para esquerda.\n");
+  }
   
   return 0;
 }
